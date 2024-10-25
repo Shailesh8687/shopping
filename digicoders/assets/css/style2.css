@@ -1,0 +1,73 @@
+body{
+    background-color: aliceblue;
+}
+.h{
+    height: 50px;
+}
+
+.button{
+    height: 50px;
+    color: rgb(238, 23, 23);
+    background-color: rgb(10, 153, 10);
+}
+.b{
+   position: absolute; 
+   width:45%;
+   height:fit-content;
+   margin-top: -5%;
+
+}
+.background{
+    background-color: whitesmoke;
+}
+.mark-text{
+    font-weight: 900px;
+    font-size: 180px;
+    color: #d2a98e;
+    line-height: .8;
+    margin: 0 5px -5px -5px;
+}
+.heding {
+    position: relative;
+    font-size: 12px;
+    line-height: 2em;
+    letter-spacing: 2px;
+    color: #ababab;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+
+}
+.text{
+    margin: -3px;
+}
+.service:hover{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ul{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+}
+.rebon h1{
+    font-weight: 900px;
+    font-size: 80px;
+}
+.imgdiv{
+    height: 162px;
+    width: 162px;
+    display: flex;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+    background-image: linear-gradient(160deg, #fbf7f4 0, #fefdfd 100%);
+    align-items: center;
+    justify-content: center;
+}
+.imgdiv img{
+    width: 100%;
+    height: auto;
+}
