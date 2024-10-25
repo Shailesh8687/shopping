@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+h4{
+    font-size: 20px;    
+}
+
+/* navbar css start */
+.navbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* background-color: blue; */
+    cursor: pointer;
+}
+
+.navbar i{
+    font-size: 20px;
+}
+
+.group1,.group2,.group3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.group3 button{
+    padding: 8px 20px;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* navbar css end */
+
+/* hero css start */
+
+.hero{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+.hero-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 60px;
+}
+
+.hero-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
+.hero-right img{
+    height: 100%;
+}
+
+.hero-left h4{
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.dev{
+    font-size: 65px;
+    -webkit-text-stroke: 0.5px black;
+    color: transparent;
+}
+
+.hero-left p{
+    margin-top: 20px;
+    font-size: 25px;
+    width: 80%;
+}
+
+.social{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.s-icon{
+    height: 80px;
+    width: 80px;
+    /* background-color: black; */
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-icon i{
+    font-size: 40px;
+}
+
+.s-icon:hover{
+    background-color: black;
+    color: white;
+}
+
+.s-icon:hover i{
+    font-size: 60px;
+}
+
+/* hero css end */
+
+/* skill section start */
+
+.heading{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h2{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.heading h2 span{
+    font-weight: 700;
+}
+
+.card-wrapper{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.card{
+    height: 250px;
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card i{
+    font-size: 80px;
+}
+
+.card h3{
+    font-size: 35px;
+}
+
+.card:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* skill section end */
+
+/* exprience section start */
+
+.my-exprience{
+    background-color: black;
+    color: white;
+}
+
+.exp-card-wrapper{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.exp-card{
+    /* height: 150px; */
+    width: 80%;
+    /* background-color: blue; */
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.exp-card div{
+    /* height: 50px; */
+    /* background-color: yellow; */
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exp-card p{
+    padding: 20px;
+}
+
+.exp-card:hover{
+    background-color: #bbb7b7cf;
+    color: black;
+}
+
+
+/* exprience section end */
+
+/* about section start */
+
+.about{
+    height: 100vh;
+}
+
+
+.about-left img{
+    height: 100%;
+}
+
+.about-right p{
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* about section end */
+
+/* My Project section start */
+
+.my-project{
+    background-color: black;
+    color: white;
+}
+
+
+.project-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project{
+    height: 60vh;
+    width: 90%;
+    /* background-color: burlywood; */
+    /* border: 2px solid white;
+    border-radius: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    overflow: hidden;
+}
+
+.project-img{
+    height: 80%;
+    width: 40%;
+    /* background-color: yellow; */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.project-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-text{
+    height: 100%;
+    width: 50%;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-text h1{
+    font-size: 45px;
+}
+
+.project-text i:hover{
+    cursor: pointer;
+}
+
+
+/* My Project section end */
+
+/* contact us start */
+
+.contact-us{
+    height: 100vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-wrapper{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-form{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.contact-text{
+    height: 100%;
+    width: 50%;
+    /* background-color: teal; */
+}
+
+.contact-form form input, .contact-form form textarea{
+    height: 60px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+textarea{
+    height: 140px !important;
+    width: 80% !important;
+}
+
+.contact-form form input::placeholder{
+    font-size: 20px;
+}
+
+.social button{
+    height: 80px;
+    width: 200px;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact-img{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contact-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/* contact us end */

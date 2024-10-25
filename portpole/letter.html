@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter Animation</title>
+  <style>
+    /* Container for the animated text */
+    .text-container {
+      display: inline-block;
+      font-size: 2rem;
+      overflow: hidden;
+    }
+
+    /* Styling each letter */
+    .text span {
+      display: inline-block;
+      transform: translateX(-100%);
+      animation: slideIn 0.1s forwards;
+    }
+
+    /* Delays for each letter */
+    .text span:nth-child(1) { animation-delay: 0.3s; }
+    .text span:nth-child(2) { animation-delay: 0.5s; }
+    .text span:nth-child(3) { animation-delay: 0.7s; }
+    .text span:nth-child(4) { animation-delay: 0.8s; }
+    .text span:nth-child(5) { animation-delay: 0.9s; }
+    .text span:nth-child(6) { animation-delay: 0.10s; }
+
+    /* Slide-in animation */
+    @keyframes slideIn {
+      to {
+        transform: translateX(0%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="text-container">
+    <div class="text">
+      <span>H</span>
+      <span>E</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+      <span>!</span>
+    </div>
+  </div>
+
+</body>
+</html>
