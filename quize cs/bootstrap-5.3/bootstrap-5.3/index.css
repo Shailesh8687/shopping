@@ -1,0 +1,54 @@
+.head{
+  font-size: 40px; 
+  width: auto;
+
+}
+.Topic{
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.quezbox{
+  font-size: 40px;
+  height: 200px;
+  width: 300px;
+  /* background-color: aqua; */
+  background:linear-gradient(to bottom right,white,pink,grey);
+  border: 2px;
+  border-radius: 10px;
+  /* float: left; */
+  margin-top: 20px;
+  text-align: center;
+
+} 
+
+.heading{
+  font-size: 40px;
+}
+.quezbtn{
+  font-size: 20px;
+  background-color: white;
+  border: 1px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 20px; 
+}
+.right1{
+  height: 800px;
+  width: 350px;
+  border: 1px solid white;
+  float: left;
+}
+.right2{
+  height: 800px;
+  width: 350px;
+  border: 1px solid white;
+  float: left;
+}
+.quezbtn a{
+  text-decoration: none;
+}
+li a{
+  text-decoration: none;
+}

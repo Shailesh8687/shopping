@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz in Php</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="responsive.css">
+</head>
+<style>
+    
+    .nav{
+      background-color:rgb(46, 45, 45);
+      height: 30px;
+      /* position: fixed; */
+    }
+    .nav ul{
+      display: flex;
+      text-decoration: none;
+    }
+    .nav ul li{
+      text-decoration: none;
+      list-style: none;
+      margin:0px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      height: 28px;
+      padding: 6px;
+  }
+  .nav ul li:hover{
+    background-color: black;
+  }
+  .nav li a{
+    color: white;
+    text-decoration: none;
+  }
+  .sidebar{
+    height: 1000px;
+    width: 350px;
+    /* border: 1px solid; */
+    overflow-y:scroll;
+    /* position:fixed; */
+  }
+  .sidebar1{
+    font-size: 20px;
+    margin-left: 90px;
+    color: black;
+    /* position: fixed; */
+  }
+  .topheading{
+    height: 30px;
+    text-align: center;
+    border: 1px solid white;
+    background-color:red;
+  }
+  .topheading p{
+    padding-bottom: 2px;
+    color: white;
+  }
+</style>
+<body>
+  <nav>
+    <div class="conainter-fluid topheading">
+      <p>Free Learning Platfrom for Better Future</p> 
+    </div>
+  </nav>
+    <div class="row">        
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img src="IMG/quiz.png" alt="" height="50px" width="50px" margin-left="20px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="service.html">Services</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=PHP">Online Test </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="about.html" >About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page"  href="online quiz login page.html">Login </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<nav>
+  <div class="conainter-fluid">
+  <div class="row2">
+    <div class="nav">
+    <ul>
+      <li><a href="quizh.html">HTML</a></li>
+      <li><a href="quizc.html">CSS</a></li>
+      <li><a href="quizj.html">JS</a></li>
+      <li><a href="quizb.html">BOOTSTRAP</a></li>
+      <li><a href="quizd.html">DATABASE</a></li>
+      <li><a href="quizc.html">PHP</a></li>
+      <li><a href="quizh.html">HTML</a></li>
+      <li><a href="quizc.html">CSS</a></li>
+      <li><a href="quizb.html">JS</a></li>
+      <li><a href="quizb.html">BOOTSTRAP</a></li>
+      <li><a href="quizd.html">DATABASE</a></li>
+      <li><a href="quizb.html">PHP</a></li>
+      <li><a href="quizh.html">HTML</a></li>
+      <li><a href="quizc.html">CSS</a></li>
+      <li><a href="quizb.html">JS</a></li>
+      <li><a href="quizb.html">BOOTSTRAP</a></li>
+      <li><a href="quizd.html">DATABASE</a></li>
+      <li><a href="quizb.html">PHP</a></li>
+      <li><a href="quizh.html">HTML</a></li>
+      
+    </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+<br>
+<!--frist page-->
+<div class="conainter-fluid">
+<div class="row">
+  <div class="col-4  me-0">
+    
+<div class="col-4 sidebar bg-light">
+  <ol>
+    <p class="sidebar1">Topic Details</p>
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="">JS</a></li>
+    <li><a href="">DATABASE</a></li>
+    <li> <a href="">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    <li><a href="quizc.html">DATABASE</a></li>
+    <li> <a href="quizb.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizb.html">DATABASE</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    <li> <a href="quizb.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizh.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizc.html">JS</a></li>
+    <li><a href="quizc.html">DATABASE</a></li>
+    <li> <a href="quizc.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizb.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizj.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizj.html">PHP</a></li>
+
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizj.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+
+    <li> <a href="">PHP</a></li>
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizc.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    
+   <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizc.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizc.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizc.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizc.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizc.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizc.html">PHP</a></li>
+
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    
+    <li> <a href="quizb.html">PHP</a></li>
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizc.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizh.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizh.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizh.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizb.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizb.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+    
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+
+  
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizc.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizc.html">PHP</a></li>
+
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+
+    <li><a href="quizh.html">HTML</a></li>
+    <li><a href="quizc.html">CSS</a></li>
+    <li><a href="quizb.html">BOOTSTRAP</a></li>
+    <li><a href="quizd.html">JS</a></li>
+    <li><a href="quizd.html">DATABASE</a></li>
+    <li> <a href="quizd.html">PHP</a></li>
+
+
+
+  </ol>
+</div>
+  </div>
+<!--second page-->
+  <div class="col-8 me-0">
+    <div class="head">Quiz computer Scince</div> <br>
+    <div class="head0">
+      <h3>Test your skills with Quiz computer scince</h3>
+      
+  <p class="heading">The Topic</p> 
+  <p>Each quiz contains 1-10 questions, you get 1 point for each correct answer, <br> at the end of each quiz you get your total score.</p>
+   <p>When you finish the quiz, you can go through each question with the correct answer</p>
+</div>
+<!---frist col1-->
+    <div class="right1">
+      <div class="quezbox">
+        <h1>HTML</h1>
+        <button class="quezbtn"><a href="quizh.html">Start Quiz </a></button>
+      </div>
+      <div class="quezbox">
+        <h1>CSS</h1>
+        <button class="quezbtn"><a href="quizc.html">Start Quiz </a></button>
+         
+      </div>
+      <div class="quezbox">
+        <h1>BOOTSRAP</h1>
+        <button class="quezbtn"><a href="quizb.html">Start Quiz </a></button>
+         
+      </div>
+      <div class="quezbox">
+        <h1>JAVASCRIP</h1>
+        <button class="quezbtn"><a href="quizd.html">Start Quiz </a></button>
+         
+      </div>
+      
+    </div>
+    <!--second col2-->
+    <div class="right2">
+      <div class="quezbox">
+        <h1>DADABASE</h1>
+        <button class="quezbtn"><a href="quizd.html">Start Quiz </a></button>
+          
+      </div>
+      <div class="quezbox">
+        <h1>Larvale</h1>
+        <button class="quezbtn"><a href="quizb.html">Start Quiz </a></button>
+          
+      </div>
+
+      <div class="quezbox">
+        <h1>PHP</h1>
+        <button class="quezbtn"><a href="quizh.html">Start Quiz </a></button>
+          
+      </div>
+      <div class="quezbox">
+        <h1>Java </h1>
+        <button class="quezbtn"><a href="quizb.html">Start Quiz </a></button>
+          
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+    <br>
+<!--secondpage-->
+<br>
+<br>
+<div class="container-fluid">
+
+<div class="row oth_p mb-5 text-center">
+<h1 class="my-auto">Contact Shailesh</h1>
+<p><a href="" class="text-decoration-none"></a>About </p>
+</div>
+
+<div class="row px-5 mb-5 ">
+<div class="col-lg-4 col-md-4 col-sm-12 border border-2 rounded rounded-4 text-center p-5 bg-primary text-light">
+  <h4>
+      <span  class="fa-solid fa-location-dot fw-bold f-2">
+          
+          </span>
+          <br>
+          
+      Addres </h4>  
+      <p>
+        23-24 village-Bariya post-Sabua Dist-Ghazipur pin-233302, Near By Sabua, Ghazipur, UP, India, 233302
+      </p>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 border border-2 rounded rounded-4 text-center p-5 bg-primary text-light">
+  <h4>
+      <span  class="fa-solid fa-phone fw-bold f-2">
+          
+          </span>
+          <br>
+   </h4>
+      <p>
+          7084209741, 0542356041, 7084209741, 9140967607, 8081347355, 7084209741, 8787291185
+      </p>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 border border-2 rounded rounded-4 text-center p-5 bg-primary text-light">
+  <h4>
+      <span class="fa-solid fa-envelope fw-bold f-2">
+          
+          </span>
+          <br>
+      Email
+  </h4>
+      <p>
+          palshailesh6364@.coms.in <br>
+          palshailesh6364@gmail.com
+      </p>
+</div>
+<div class="row mt-5">
+<div class="col-lg-6 col-md-6 col-sm-12 my-auto">
+  <h4>Obtaining further
+      information by droping a
+      message to our experienced IT professionals.
+  </h4>
+  <p>We’re available for 16 hours a day!</p>
+  <p>Contact will require a detailed analysis and assessment of your plan. Our experienced team can give you a best esitimation for technology and budget for your requirement.</p>
+  
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+  <form action="">
+      <div class="row">
+          <div class="col-sm-6">
+              <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+              <div class="mb-3">
+                  <input type="Email" class="form-control" placeholder="Email" required>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="mb-3">
+                  <input type="number" class="form-control" placeholder="Phone" required>
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+              <div class="mb-3">
+                  <select class="form-select" aria-label="Default select example">
+                      <option selected>Your Enquiry for</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+              </div>
+          </div>
+          <div class="col-sm-12">
+              <div class="mb-3">
+                  <textarea class="form-control" cols="30" rows="5"></textarea>
+              </div>
+          </div>
+          <div class="col-sm-12">
+              <div class="mb-3">
+                  <button class="btn btn-success">Send</button>
+              </div>
+          </div>
+
+      </div>
+  </form>
+</div>
+</div>
+<div class="row mb-5">
+<div class="col-lg-12 col-md-12 col-sm-12">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.0292563026164!2d80.9361263736697!3d26.870811561893234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd90f852511b%3A0xea3004cdf494ecbb!2sDigiCoders%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1716880784954!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+<!--footer-->
+<div class="row bg-dark text-light ">
+<div class="col-lg-4 col-md-6 col-sm-12 p-3 ">
+<img src="https://digicoders.in/public/assets/images/team/team.png" class="d-block w-150" alt="..." height="100px">
+<p>23-24 village-Bariya post-Sabua Dist-Ghazipur pin-233302, Near By Sabua, Ghazipur, UP, India, 233302
+  
+  palshailesh6364@gmail.com</p>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 p-3  text-decoration-none">
+<ul>
+  <li>
+    <h4>Quick Link</h4>
+  </li>
+  <li><a href="about.html" class="text-light">About Us</a></li>
+  <li><a href="#" class="text-light">Service</a></li>
+  <li><a href="#" class="text-light">Online test</a></li>
+  <li><a href="#" class="text-light">Contact</a></li>
+  
+</ul>
+
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 p-3 text-decoration-none">
+
+<ul>
+  <li>
+    <h4>Support</h4>
+  </li>
+  <li><a href="#" class="text-light">Contact Us</a></li>
+  <li>
+    <span class="material-symbols-outlined fs-5">
+      call
+      </span>
+      <a href="tel:+91 7084209741" class="text-light">+91 7084209741</a>
+  </li>
+
+  <li>
+    <span class="material-symbols-outlined">
+      mail
+      </span>
+      <a href="mailto:palshailesh6364@gmail.com" class="text-light">palshailesh6364@gmail.com</a>
+  </li>
+</ul>
+</div>
+</div>
+<!--footer end-->
+<!--live chat-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/66ebbe684cbc4814f7dae16a/1i84dvj7p';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+<!--free hit counter-->
+</body>
+</html>

@@ -1,0 +1,6 @@
+@media only screen and (max-width:600px) and (min-width:0px) {
+  body  {
+background-color: red;
+color: red;
+    }
+}
